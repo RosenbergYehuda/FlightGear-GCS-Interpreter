@@ -74,8 +74,8 @@ pair<vector<vector<string>>, vector<vector<string>>> Lexer::lexingMethod(string 
 /*
 int main()
 {
-    Lexer instance;
-    pair<vector<vector<string>>, vector<vector<string>>> myPair = instance.lexingMethod("my_file.txt");
+    
+    pair<vector<vector<string>>, vector<vector<string>>> myPair = Lexer::getinstance().lexingMethod("my_file.txt");
     vector<vector<string>> vec = myPair.second;
 
     //  Displaying the 2D vector
