@@ -81,7 +81,7 @@ void Server::updateMap(char (&buffer)[1024])
 		values.push_back({double_token});
 	}
 	// inserting the values from the drone to there location in the map
-	PathValueMap::getinstance()->pathValueMap(values);
+	PathValueMap::getinstance().pathValueMap(values);
 };
 
 /*

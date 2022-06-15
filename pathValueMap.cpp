@@ -1,13 +1,9 @@
 #include "headerFiles/pathValueMap.h"
 
 // singel tone
-PathValueMap *PathValueMap::instance = 0;
-PathValueMap *PathValueMap::getinstance()
+PathValueMap PathValueMap::instance ;
+PathValueMap& PathValueMap::getinstance()
 {
-    if (instance == 0)
-    {
-        instance = new PathValueMap();
-    }
     return instance;
 }
 
@@ -29,8 +25,8 @@ void PathValueMap::pathValueMap(vector<double> values)
 int main()
 {
     vector<double> val = {11.2, 10.3, 20.4};
-    PathValueMap::getinstance()->pathValueMap(val);
-    cout<<PathValueMap::getinstance()->umap["2"]<<endl;
+    PathValueMap::getinstance().pathValueMap(val);
+    cout<<PathValueMap::getinstance().umap["2"]<<endl;
     return 0;
 }
 */

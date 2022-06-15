@@ -12,13 +12,14 @@ using namespace std;
 class Client
 {
 private:
-    static Client *instance;
+    Client() {}
+    static Client instance;
 
 public:
+    static Client& getinstance();
+
     int sock = 0, valread;
     char buffer[1024] = {0};
-
-    static Client *getinstance();
 
     // a func that sets up the client side
     int client(string IP, string port);

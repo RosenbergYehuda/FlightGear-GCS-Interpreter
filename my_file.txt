@@ -22,7 +22,7 @@ var elevator = bind /controls/flight/elevator
 var alt = bind /instrumentation/altimeter/indicated-altitude-ft
 var rpm = bind /engines/engine/rpm
 print "let's start"
-sleep 1000
+sleep 2000
 magnetos = 3
 throttle = 0.2
 mixture = 0.949

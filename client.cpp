@@ -1,13 +1,9 @@
 #include "headerFiles/client.h"
 
 // singel tone
-Client *Client::instance = 0;
-Client *Client::getinstance()
+Client Client::instance;
+Client& Client::getinstance()
 {
-	if (instance == 0)
-	{
-		instance = new Client();
-	}
 	return instance;
 }
 

@@ -13,7 +13,7 @@ double ToolBox::getStatus(string var)
     else
     {
         string path = SymbolPathMap::getinstance().umap.at(var);
-        ret = PathValueMap::getinstance()->umap.at(path);
+        ret = PathValueMap::getinstance().umap.at(path);
     }
     return ret;
 };

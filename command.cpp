@@ -26,7 +26,7 @@ void ServerCommand::doCommand(vector<string> line)
 // Derived class client
 void ClientCommand::doCommand(vector<string> line)
 {
-    Client::getinstance()->client(line[1], line[2]);
+    Client::getinstance().client(line[1], line[2]);
 };
 
 // Derived class var
@@ -66,7 +66,7 @@ void SetCommand::doCommand(vector<string> line)
     // converting the string 'oneString' to a char*
     char *charOneString = &oneStrings[0];
 
-    Client::getinstance()->send(charOneString);
+    Client::getinstance().send(charOneString);
 };
 
 // Derived class while
