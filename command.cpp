@@ -39,11 +39,11 @@ void VarCommand::doCommand(vector<string> line)
 
         // converting the double value to a string in order to insert it to a string based map.
         string strValue = to_string(dValue);
-        SymbolPathMap::getinstance()->symbolPathMap(line[1], strValue);
+        SymbolPathMap::getinstance().symbolPathMap(line[1], strValue);
     }
     else
     {
-        SymbolPathMap::getinstance()->symbolPathMap(line[1], line[4]);
+        SymbolPathMap::getinstance().symbolPathMap(line[1], line[4]);
     }
 };
 
@@ -53,7 +53,7 @@ void SetCommand::doCommand(vector<string> line)
     // connecting multiple string to one string
     stringstream ss;
     ss << "set"
-       << " " << SymbolPathMap::getinstance()->umap.at(line[0]) << " " << line[2] << "\r\n";
+       << " " << SymbolPathMap::getinstance().umap.at(line[0]) << " " << line[2] << "\r\n";
     string oneStrings = ss.str();
 
     // removing the " symbol from the path
@@ -125,7 +125,7 @@ void WhileCommand::doCommand(vector<string> line)
 void PrintCommand::doCommand(vector<string> line)
 {
     // checking what kind of print is it, a plane text or a status.
-    if ((SymbolPathMap::getinstance()->umap.find(line[1]) != SymbolPathMap::getinstance()->umap.end()))
+    if ((SymbolPathMap::getinstance().umap.find(line[1]) != SymbolPathMap::getinstance().umap.end()))
         cout << "the current " << line[1] << " is: " << toolsinstance.getStatus(line[1]) << endl;
     else
     {

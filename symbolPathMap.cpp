@@ -1,13 +1,9 @@
 #include "headerFiles/symbolPathMap.h"
 
 // singel tone
-SymbolPathMap *SymbolPathMap::instance = 0;
-SymbolPathMap *SymbolPathMap::getinstance()
+SymbolPathMap SymbolPathMap::instance ;
+SymbolPathMap& SymbolPathMap::getinstance()
 {
-    if (instance == 0)
-    {
-        instance = new SymbolPathMap();
-    }
     return instance;
 }
 

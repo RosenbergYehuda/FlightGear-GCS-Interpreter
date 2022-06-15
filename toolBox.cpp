@@ -5,14 +5,14 @@ double ToolBox::getStatus(string var)
     double ret;
     if (var == "h0")
     {
-        string strVal = SymbolPathMap::getinstance()->umap.at(var);
+        string strVal = SymbolPathMap::getinstance().umap.at(var);
 
         // convert from string to double
         ret = stod(strVal);
     }
     else
     {
-        string path = SymbolPathMap::getinstance()->umap.at(var);
+        string path = SymbolPathMap::getinstance().umap.at(var);
         ret = PathValueMap::getinstance()->umap.at(path);
     }
     return ret;
@@ -56,7 +56,7 @@ vector<string> ToolBox::replaceByStatus(vector<string> line)
         string word = line[i];
 
         // checking if the word is a var type that i need to get its status
-        if (SymbolPathMap::getinstance()->umap.find(word) != SymbolPathMap::getinstance()->umap.end())
+        if (SymbolPathMap::getinstance().umap.find(word) != SymbolPathMap::getinstance().umap.end())
         {
             // getting its status
             double dValue = toolsInstance.getStatus(word);

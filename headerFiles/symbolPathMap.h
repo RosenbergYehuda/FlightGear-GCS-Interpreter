@@ -8,10 +8,11 @@ using namespace std;
 class SymbolPathMap
 {
 private:
-    static SymbolPathMap *instance;
+    SymbolPathMap() {}
+    static SymbolPathMap instance;
 
 public:
-    static SymbolPathMap *getinstance();
+    static SymbolPathMap& getinstance();
 
     // Declaring the type and name of the vector
     static unordered_map<string, string> umap;
