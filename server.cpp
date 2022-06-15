@@ -47,8 +47,6 @@ void Server::server(string port)
 	while (1)
 	{
 		valread = read(new_socket, buffer, 1024);
-		//Server instance;
-		//instance.updateMap(buffer);
 		Server::updateMap(buffer);
 	}
 }

@@ -50,7 +50,6 @@ pair<vector<vector<string>>, vector<vector<string>>> ToolBox::combine(vector<vec
 
 vector<string> ToolBox::replaceByStatus(vector<string> line)
 {
-    ToolBox toolsInstance;
     for (int i = 2; i < line.size(); i++)
     {
         string word = line[i];
@@ -59,7 +58,7 @@ vector<string> ToolBox::replaceByStatus(vector<string> line)
         if (SymbolPathMap::getinstance().umap.find(word) != SymbolPathMap::getinstance().umap.end())
         {
             // getting its status
-            double dValue = toolsInstance.getStatus(word);
+            double dValue = ToolBox::getStatus(word);
 
             // converting the status from double to string
             string strValue = to_string(dValue);

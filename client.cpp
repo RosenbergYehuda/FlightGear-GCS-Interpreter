@@ -1,6 +1,6 @@
 #include "headerFiles/client.h"
 
-// singel tone
+// singeltone
 Client Client::instance;
 Client& Client::getinstance()
 {
@@ -52,8 +52,8 @@ void Client::send(char *message)
 /*
 int main()
 {
-	Client::getinstance()->client("127.0.0.1", "5402");
-	Client::getinstance()->send("ls\r\n");
+	Client::getinstance().client("127.0.0.1", "5402");
+	Client::getinstance().send("ls\r\n");
 	return 0 ;
 }
 */
