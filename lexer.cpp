@@ -24,7 +24,7 @@ pair<vector<vector<string>>, vector<vector<string>>> Lexer::lexingMethod(string 
         {
             ch = lineText[i];
 
-            // this is needed for the end of the while loop
+            // this indicates the end of the while loop
             if (ch != '}')
             {
                 if (ch != ' ')
