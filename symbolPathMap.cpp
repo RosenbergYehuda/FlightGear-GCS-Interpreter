@@ -1,6 +1,6 @@
 #include "headerFiles/symbolPathMap.h"
 
-// singel tone
+// singelton
 SymbolPathMap SymbolPathMap::instance ;
 SymbolPathMap& SymbolPathMap::getinstance()
 {

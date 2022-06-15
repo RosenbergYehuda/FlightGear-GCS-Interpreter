@@ -14,9 +14,6 @@
 using namespace std ::literals::chrono_literals;
 using namespace std;
 
-//a global array that will contain the data
-//extern char buffer[1024];
-
 class Server
 {
     public:

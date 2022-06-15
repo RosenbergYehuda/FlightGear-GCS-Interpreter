@@ -1,6 +1,6 @@
 #include "headerFiles/pathValueMap.h"
 
-// singel tone
+// singelton
 PathValueMap PathValueMap::instance ;
 PathValueMap& PathValueMap::getinstance()
 {
