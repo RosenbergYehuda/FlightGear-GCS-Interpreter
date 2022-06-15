@@ -9,12 +9,9 @@ using namespace std;
 
 int main()
 {
-    // all instances
-    Lexer lexerInstance;
-    CommandMap commandMapInstance;
 
     // get the text from the lexer
-    pair<vector<vector<string>>, vector<vector<string>>> myPair = lexerInstance.lexingMethod("my_file.txt");
+    pair<vector<vector<string>>, vector<vector<string>>> myPair = Lexer::getinstance().lexingMethod("my_file.txt");
     vector<vector<string>> mainVec = myPair.first;
 
     // loop over each vector (AKA line)
@@ -26,6 +23,7 @@ int main()
         // and fedding the polimorphic "do command" whith the entire line of text
 
         // checking if the command is not in the command map (that means it is a set type)
+        CommandMap commandMapInstance;
         if (CommandMap::umap.find(line[0]) == CommandMap::umap.end())
         {
             commandMapInstance.umap["set"]->doCommand({line});

@@ -1,5 +1,10 @@
 #include "headerFiles/lexer.h"
 
+Lexer Lexer::instance;
+Lexer &Lexer::getinstance()
+{
+    return instance;
+}
 pair<vector<vector<string>>, vector<vector<string>>> Lexer::lexingMethod(string filename)
 {
     // Initializing

@@ -3,7 +3,6 @@
 #include "shuntingYard.cpp"
 
 ToolBox toolsinstance;
-Lexer lexInstance;
 CommandMap commandMapInstance;
 Calculator calInstance;
 
@@ -73,7 +72,7 @@ void SetCommand::doCommand(vector<string> line)
 void WhileCommand::doCommand(vector<string> line)
 {
     // use the second part of the pair, that contains only the while body instructions
-    pair<vector<vector<string>>, vector<vector<string>>> myPair = lexInstance.lexingMethod("my_file.txt");
+    pair<vector<vector<string>>, vector<vector<string>>> myPair = Lexer::getinstance().lexingMethod("my_file.txt");
     vector<vector<string>> whileBody = myPair.second;
 
     // the while condition

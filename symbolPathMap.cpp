@@ -17,14 +17,14 @@ void SymbolPathMap::symbolPathMap(string key, string value)
 /*
 int main()
 {
-    SymbolPathMap::getinstance()->symbolPathMap("a","b");
+    SymbolPathMap::getinstance().symbolPathMap("a","b");
 
-    if (SymbolPathMap::getinstance()->umap.find("23") == SymbolPathMap::getinstance()->umap.end())
+    if (SymbolPathMap::getinstance().umap.find("23") == SymbolPathMap::getinstance().umap.end())
         cout << "Element Not Present\n";
     else
         cout << "Element Present\n";
 
-    cout<<SymbolPathMap::getinstance()->umap["a"]<<endl;
+    cout<<SymbolPathMap::getinstance().umap["a"]<<endl;
     //return "0";
 }
 */
