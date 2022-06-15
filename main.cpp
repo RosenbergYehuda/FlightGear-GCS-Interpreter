@@ -1,0 +1,39 @@
+#include <iostream>
+#include "headerFiles/lexer.h"
+#include "headerFiles/commandMap.h"
+#include "headerFiles/command.h"
+#include <stdint.h>
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    // all instances
+    Lexer lexerInstance;
+    CommandMap commandMapInstance;
+
+    // get the text from the lexer
+    pair<vector<vector<string>>, vector<vector<string>>> myPair = lexerInstance.lexingMethod("my_file.txt");
+    vector<vector<string>> mainVec = myPair.first;
+
+    // loop over each vector (AKA line)
+    for (int i = 0; i < mainVec.size(); i++)
+    {
+        vector<string> line = mainVec[i];
+
+        // sending the command word to activate its command class via the command map,
+        // and fedding the polimorphic "do command" whith the entire line of text
+
+        // checking if the command is not in the command map (that means it is a set type)
+        if (CommandMap::umap.find(line[0]) == CommandMap::umap.end())
+        {
+            commandMapInstance.umap["set"]->doCommand({line});
+        }
+        else
+        {
+            commandMapInstance.umap[line[0]]->doCommand({line});
+        }
+    }
+    return 0;
+}
