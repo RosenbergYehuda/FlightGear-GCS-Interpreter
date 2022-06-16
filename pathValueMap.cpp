@@ -17,6 +17,7 @@ void PathValueMap::pathValueMap(vector<double> values)
     // creating a map which the key is a path and the value is the  value recived from the drone for that path.
     for (int i = 0; i < paths.size(); i++)
     {
+        //using the [] operator means that if that key exists, enter it, else, create it.
         umap[paths[i]] = values[i];
     }
 };
