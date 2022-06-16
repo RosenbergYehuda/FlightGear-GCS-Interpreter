@@ -24,7 +24,7 @@ int main()
 
         // checking if the command is not in the command map (that means it is a set type)
         CommandMap commandMapInstance;
-        if (CommandMap::umap.find(line[0]) == CommandMap::umap.end())
+        if (commandMapInstance.umap.find(line[0]) == commandMapInstance.umap.end())
         {
             commandMapInstance.umap["set"]->doCommand({line});
         }
