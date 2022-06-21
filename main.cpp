@@ -9,7 +9,6 @@ using namespace std;
 
 int main()
 {
-
     // get the text from the lexer
     pair<vector<vector<string>>, vector<vector<string>>> myPair = Lexer::getinstance().lexingMethod("my_file.txt");
     vector<vector<string>> mainVec = myPair.first;
