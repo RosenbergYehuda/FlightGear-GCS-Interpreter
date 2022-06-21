@@ -20,12 +20,11 @@ class Server
     //server func
     void server(string port);
 
-    //a func that executes the previous server func in it's own thread.
+    // this func executes the previous server func in it's own thread.
     void serverThread(string port, string frequency);
     
-    // a func that separats the values in the buffer
+    // this func separats the values recived from the server and store them in a map
     void updateMap (char (&buffer)[1024]);
-
 };
 
 

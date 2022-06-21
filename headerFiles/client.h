@@ -21,9 +21,9 @@ public:
     int sock = 0, valread;
     char buffer[1024] = {0};
 
-    // a func that sets up the client side
+    // this func sets up the client side
     int client(string IP, string port);
 
-    // a func that uses the previos func, to send a message to the server, and recive the answer.
+    // this func uses the previos func, to send a message to the server, and recive the answer.
     void send(char *message);
 };

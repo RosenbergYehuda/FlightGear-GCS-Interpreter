@@ -14,7 +14,7 @@ int Client::client(string ip, string port)
 	// converting the string 'port' to a int PORT
 	int PORT = stoi(port);
 
-	////converting the string 'ip' to a char* IP
+	//converting the string 'ip' to a char* IP
 	char *IP = &ip[0];
 
 	if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0)
@@ -43,7 +43,7 @@ int Client::client(string ip, string port)
 	return 1;
 }
 
-void Client::send(char *message)
+void Client::send(char* message)
 {
 	::send(sock, message, strlen(message), 0);
 	valread = read(sock, buffer, 1024);
