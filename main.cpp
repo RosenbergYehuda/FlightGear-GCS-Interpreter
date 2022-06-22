@@ -1,7 +1,6 @@
 #include <iostream>
 #include "headerFiles/lexer.h"
 #include "headerFiles/commandMap.h"
-#include "headerFiles/command.h"
 #include <stdint.h>
 #include <bits/stdc++.h>
 
