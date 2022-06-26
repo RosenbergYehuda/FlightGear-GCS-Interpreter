@@ -13,7 +13,7 @@ server.o: server.cpp  pathValueMap.cpp
 client.o: client.cpp 
 	$(CXX) -c client.cpp
 
-command.o: command.cpp shuntingYard.cpp symbolPathMap.cpp pathValueMap.cpp
+command.o: command.cpp shuntingYard.cpp symbolPathMap.cpp pathValueMap.cpp server.cpp client.cpp
 	$(CXX) -c $(CXXFLAGS) command.cpp 
 
 commandMap.o: commandMap.cpp command.cpp
