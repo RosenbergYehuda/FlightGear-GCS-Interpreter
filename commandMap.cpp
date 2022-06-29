@@ -4,16 +4,17 @@
 CommandMap::CommandMap()
 {
     // Inserting values by using [] operator
-    umap["openDataServer"] = new ServerCommand();
-    umap["connect"] = new ClientCommand();
-    umap["var"] = new VarCommand();
-    umap["set"] = new SetCommand();
-    umap["while"] = new WhileCommand();
-    umap["print"] = new PrintCommand();
-    umap["sleep"] = new SleepCommand();
+    umap["openDataServer"] = std::make_unique <ServerCommand>();
+    umap["connect"] = std::make_unique<ClientCommand>();
+    umap["var"] = std::make_unique<VarCommand>();
+    umap["set"] = std::make_unique<SetCommand>();
+    umap["while"] = std::make_unique<WhileCommand>();
+    umap["print"] = std::make_unique<PrintCommand>();
+    umap["sleep"] = std::make_unique<SleepCommand>();
 };
 
-unordered_map<string, Command *> CommandMap::umap;
+unordered_map<string, unique_ptr <Command>> CommandMap::umap;
+
 
 /*
 int main()
