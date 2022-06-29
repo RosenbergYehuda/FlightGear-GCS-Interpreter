@@ -4,7 +4,7 @@
 
 This project is a Ground Control Stations interpeter for the FlightGear simulator.
 
-The orders to control the dron are given in aautomatically. text file, the interpeter will read and execute them.
+The commands to control the dron are given in a text file, the interpeter shuld read and execute them.
 
 ## Installation
 - Clone the entire repository
