@@ -67,8 +67,8 @@ pair<vector<vector<string>>, vector<vector<string>>> Lexer::lexingMethod(string 
     MyReadFile.close();
 
     // combine bouth of the vectors together
-    ToolBox tinstance;
-    return tinstance.combine(whileVec, mainVec);
+    ToolBox tInstance;
+    return tInstance.combine(whileVec, mainVec);
 };
 
 /*

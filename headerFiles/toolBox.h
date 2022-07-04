@@ -20,7 +20,7 @@ public:
     bool operatorInterp(double x, string op, string yStr);
 
     // a func that recives two vectors of vectors of strings, and pairs them together to return
-    pair<vector<vector<string>>, vector<vector<string>>> combine(vector<vector<string>> vec1, vector<vector<string>> vec2);
+    pair<vector<vector<string>>, vector<vector<string>>> combine(const vector<vector<string>> &vec1, const vector<vector<string>> &vec2);
 
     // a func that starts the drone
     static void systemRun();

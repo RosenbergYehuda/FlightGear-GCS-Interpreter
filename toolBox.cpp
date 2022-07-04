@@ -43,7 +43,7 @@ void ToolBox::systemRun()
     system("fgfs --telnet=socket,in,10,127.0.0.1,5402,tcp --generic=socket,out,10,127.0.0.1,5400,tcp,generic_small");
 };
 
-pair<vector<vector<string>>, vector<vector<string>>> ToolBox::combine(vector<vector<string>> vec1, vector<vector<string>> vec2)
+pair<vector<vector<string>>, vector<vector<string>>> ToolBox::combine(const vector<vector<string>> &vec1, const vector<vector<string>> &vec2)
 {
     return std::make_pair(vec2, vec1);
 };
