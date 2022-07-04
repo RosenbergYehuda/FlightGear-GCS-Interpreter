@@ -7,7 +7,7 @@ CommandMap commandMapInstance;
 Calculator calInstance;
 
 // Derived class server
-void ServerCommand::doCommand(vector<string> line)
+void ServerCommand::doCommand(const vector<string> &line)
 {
     Server instance;
     instance.serverThread(line[1], line[2]);
@@ -23,13 +23,13 @@ void ServerCommand::doCommand(vector<string> line)
 };
 
 // Derived class client
-void ClientCommand::doCommand(vector<string> line)
+void ClientCommand::doCommand(const vector<string> &line)
 {
     Client::getinstance().client(line[1], line[2]);
 };
 
 // Derived class var
-void VarCommand::doCommand(vector<string> line)
+void VarCommand::doCommand(const vector<string> &line)
 {
     // checking is it a bind order or a set order.
     if (line[3] != "bind")
@@ -47,7 +47,7 @@ void VarCommand::doCommand(vector<string> line)
 };
 
 // Derived class set
-void SetCommand::doCommand(vector<string> line)
+void SetCommand::doCommand(const vector<string> &line)
 {
     // connecting multiple string to one string
     stringstream ss;
@@ -69,7 +69,7 @@ void SetCommand::doCommand(vector<string> line)
 };
 
 // Derived class while
-void WhileCommand::doCommand(vector<string> line)
+void WhileCommand::doCommand(const vector<string> &line)
 {
     // use the second part of the pair, that contains only the while body instructions
     pair<vector<vector<string>>, vector<vector<string>>> myPair = Lexer::getinstance().lexingMethod("my_file.txt");
@@ -121,7 +121,7 @@ void WhileCommand::doCommand(vector<string> line)
 };
 
 // Derived class print
-void PrintCommand::doCommand(vector<string> line)
+void PrintCommand::doCommand(const vector<string> &line)
 {
     // checking what kind of print is it, a plane text or a status.
     if ((SymbolPathMap::getinstance().umap.find(line[1]) != SymbolPathMap::getinstance().umap.end()))
@@ -135,7 +135,7 @@ void PrintCommand::doCommand(vector<string> line)
 };
 
 // Derived class sleep
-void SleepCommand::doCommand(vector<string> line)
+void SleepCommand::doCommand(const vector<string> &line)
 {
     // converting string to int
     int timeToSleep = stoi(line[1]);
