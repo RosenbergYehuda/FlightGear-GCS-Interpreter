@@ -17,5 +17,5 @@ public:
     // Declaring umap type and name
     static unordered_map<string, double> umap;
 
-    static void pathValueMap(vector<double> values);
+    static void pathValueMap(const vector<double> &values);
 };
