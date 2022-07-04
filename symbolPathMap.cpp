@@ -9,7 +9,7 @@ SymbolPathMap& SymbolPathMap::getinstance()
 
 unordered_map<string, string> SymbolPathMap::umap;
 
-void SymbolPathMap::symbolPathMap(string key, string value)
+void SymbolPathMap::symbolPathMap(const string &key, const string &value)
 {
     umap.insert({key, value});
 };

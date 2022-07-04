@@ -18,5 +18,5 @@ public:
     static unordered_map<string, string> umap;
 
     // a func that creats a map, and inserts a given key and a given value.
-    static void symbolPathMap(string key, string value);
+    static void symbolPathMap(const string &key, const string &value);
 };
