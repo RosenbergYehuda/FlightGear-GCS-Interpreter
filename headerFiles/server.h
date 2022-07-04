@@ -21,7 +21,7 @@ class Server
     void server(string port);
 
     // this func executes the previous server func in it's own thread.
-    void serverThread(string port, string frequency);
+    void serverThread(const string &port, const string &frequency);
     
     // this func separats the values recived from the server and store them in a map
     void updateMap (char (&buffer)[1024]);

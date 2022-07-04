@@ -51,7 +51,7 @@ void Server::server(string port)
 	}
 }
 
-void Server::serverThread(string port, string frequancy)
+void Server::serverThread(const string &port, const string &frequancy)
 {
 	thread t1(&Server::server, this, port);
 
