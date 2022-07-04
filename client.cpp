@@ -43,7 +43,7 @@ int Client::client(string ip, string port)
 	return 1;
 }
 
-void Client::send(char* message)
+void Client::send(const char* message)
 {
 	::send(sock, message, strlen(message), 0);
 	valread = read(sock, buffer, 1024);

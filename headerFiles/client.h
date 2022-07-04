@@ -25,5 +25,5 @@ public:
     int client(string IP, string port);
 
     // this func uses the previos func, to send a message to the server, and recive the answer.
-    void send(char *message);
+    void send(const char *message);
 };
