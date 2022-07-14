@@ -73,7 +73,7 @@ The task is to make the drone take off and stable itself in the air automaticall
 
 ### Design And Architecture
 
-The Design and Architecture of the project are as falow:
+The Design and Architecture of the project are as follows:
 
 * Object-oriented programming
 
