@@ -105,7 +105,7 @@ The Design and Architecture of the project are as falow:
 ## Usage
 - Open your terminal and navigate to the cloned repository. then run `make`
 - run `./output`
-- Lean back and chill while the dron will take off and stable itself in the air automatically.
+- Lean back and chill while the drone will take off and stable itself in the air automatically.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
