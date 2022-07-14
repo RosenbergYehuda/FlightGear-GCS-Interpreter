@@ -1,14 +1,13 @@
-<div id="top"></div>
-
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]v
+[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
+<div id="top"></div>
 
 <!-- PROJECT LOGO -->
 <br />
@@ -171,9 +170,9 @@ https://www.youtube.com/results?search_query=flightgear
 [forks-url]: https://github.com/RosenbergYehuda/FlightGear-GCS-Interpeter/network/members
 [stars-shield]: https://img.shields.io/github/stars/RosenbergYehuda/FlightGear-GCS-Interpeter.svg?style=for-the-badge
 [stars-url]: https://github.com/RosenbergYehuda/FlightGear-GCS-Interpeter/stargazers
-v[issues-shield]: https://img.shields.io/github/issues/RosenbergYehuda/FlightGear-GCS-Interpeter.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/RosenbergYehuda/FlightGear-GCS-Interpeter.svg?style=for-the-badge
 [issues-url]: https://github.com/RosenbergYehuda/FlightGear-GCS-Interpeter/issues
 [license-shield]: https://img.shields.io/github/license/RosenbergYehuda/FlightGear-GCS-Interpeter.svg?style=for-the-badge
 [license-url]: https://github.com/RosenbergYehuda/FlightGear-GCS-Interpeter/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/yehuda-rosenberg-38835243
+[linkedin-url]: https://linkedin.com/in/yehuda-rosenberg-38835243 
