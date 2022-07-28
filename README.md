@@ -14,7 +14,7 @@
 <br />
 <div align="center">
 
-<a href="https://github.com/RosenbergYehuda/FlightGear-GCS-Interpeter">
+<a href="https://upload.wikimedia.org/wikipedia/commons/3/34/FlightGear_Logo.svg">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
