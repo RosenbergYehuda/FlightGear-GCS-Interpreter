@@ -117,7 +117,7 @@ The Design and Architecture of the project are as follows:
 ``` mermaid
 
 graph TD;
-    A[text file] --> B{Lexer};
+    A[https://www.gnu.org/licenses/old-licenses/gpl-2.0.htmltext file] --> B{Lexer};
     B --> C[CommandMap];
     B --> D[SymbolPathMap];
     C --> E[Command];
@@ -148,7 +148,8 @@ Yehuda Z Rosenberg
 
 The code is distributed under the MIT License. See `LICENSE.txt` for more information.
 
-The Logo is distributed under the GNU General Public License. See for more information.
+The Logo is distributed under the GNU General Public License. 
+See [version 2 of the GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
