@@ -146,8 +146,9 @@ Yehuda Z Rosenberg
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+The code is distributed under the MIT License. See `LICENSE.txt` for more information.
 
+The Logo is distributed under the GNU General Public License. See for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
