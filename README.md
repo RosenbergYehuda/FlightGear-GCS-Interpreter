@@ -13,11 +13,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-<<<<<<< HEAD
-<a href="https://github.com/othneildrew/Best-README-Template">
-=======
 
->>>>>>> 775ee7b14ae53587550b04dc489a59a5cab9bbc1
+<a href="https://github.com/RosenbergYehuda/FlightGear-GCS-Interpeter">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
