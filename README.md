@@ -150,6 +150,8 @@ The code is distributed under the MIT License. See `LICENSE.txt` for more inform
 The Logo is distributed under the GNU General Public License. 
 See [version 2 of the GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) for more information.
 
+Logo credit: Wikimedia User - Berelly.
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
