@@ -52,7 +52,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#flow-chart">Flow chart</a></li>
+    <li><a href="#flowchart">Flowchart</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -113,8 +113,8 @@ The Design and Architecture of the project are as follows:
 
 
 
-<!-- FLOW CHART -->
-## Flow chart
+<!-- FLOWCHART -->
+## Flowchart
 ``` mermaid
 
 graph TD;
