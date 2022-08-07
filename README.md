@@ -95,7 +95,7 @@ The Design and Architecture of the project are as follows:
 - Clone the repo from 
 `https://github.com/RosenbergYehuda/FlightGear-GCS-Interpeter.git`.
 - Download the simulator from [FlightGear.org](http://home.flightgear.org/).
-- Copy the generic_small file from the repository and paste it in the protocol folder at the location of the FlightGear files on your system. for example: /usr/share/games/flightgear/Protocol.
+- Copy the `generic_small` file from the repository and paste it in the protocol folder at the location of the FlightGear files on your system. for example: /usr/share/games/flightgear/Protocol.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
