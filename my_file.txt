@@ -43,7 +43,7 @@ var h0 = heading
 print h0
 breaks = 0
 while alt < 1500 {
-	rudder = ( h0 - heading ) / 32
+	rudder = ( h0 - heading ) / 36
 	throttle = throttle +0.05
 	aileron = ( 0 - roll ) / 70
 	elevator = pitch / 50
