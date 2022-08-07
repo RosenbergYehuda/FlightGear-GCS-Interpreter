@@ -9,7 +9,7 @@ using namespace std;
 class ToolBox
 {
 public:
-    // a func that returns the status of a var. the func will go thru both maps in order to
+    // a func that returns the status of a var. the func will go thergh both maps in order to
     // return a answer.
     double getStatus(string var);
 
