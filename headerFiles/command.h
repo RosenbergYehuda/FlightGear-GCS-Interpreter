@@ -22,6 +22,7 @@ class Command
 {
 public:
     virtual void doCommand(const vector<string> &line) = 0;
+    virtual ~Command(){}
 };
 
 // Derived class Server
