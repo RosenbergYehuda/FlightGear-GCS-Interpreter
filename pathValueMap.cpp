@@ -22,12 +22,3 @@ void PathValueMap::pathValueMap(const vector<double> &values)
     }
 };
 
-/*
-int main()
-{
-    vector<double> val = {11.2, 10.3, 20.4};
-    PathValueMap::getinstance().pathValueMap(val);
-    cout<<PathValueMap::getinstance().umap["2"]<<endl;
-    return 0;
-}
-*/

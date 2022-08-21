@@ -236,24 +236,3 @@ public:
 template< class T > 
 void Token< T >::evaluate (Calculator * c) { c->consume (token_); }
 
-
-/*
-int main () {
-    Calculator c;
-    // std::string x ="( 12.886713-";
-    // std::string y = "12.886713";
-    // std::string z =" )/20";
-
-    std::string a = "(20+10)*3/2-3";
-    std::string b = "( 12.886713- 12.886713 )/20";
-    //std::string b = x + y + z;
-    std::string g = "- 40.000000 / 70";
-    std::string d = "0.000000 / 50";
-
-    //std::cout << c.calculate (a) << std::endl;
-    std::cout << c.calculate (b) << std::endl;
-   // std::cout << c.calculate (g) << std::endl;
-   // std::cout << c.calculate (d) << std::endl;
-    return 0;
-}
-*/

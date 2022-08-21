@@ -83,16 +83,3 @@ void Server::updateMap(char (&buffer)[1024])
 	PathValueMap::getinstance().pathValueMap(values);
 };
 
-/*
-int main()
-{
-	Server instance;
-	//instance.server("5400");
-	instance.serverThread("5400","10");
-
-
- //this is needed for keep the thread alive until the drone connects.
-	cin.ignore();
-	return 0;
-}
-*/

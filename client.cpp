@@ -48,12 +48,3 @@ void Client::send(const char* message)
 	::send(sock, message, strlen(message), 0);
 	valread = read(sock, buffer, 1024);
 }
-
-/*
-int main()
-{
-	Client::getinstance().client("127.0.0.1", "5402");
-	Client::getinstance().send("ls\r\n");
-	return 0 ;
-}
-*/

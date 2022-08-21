@@ -143,15 +143,3 @@ void SleepCommand::doCommand(const vector<string> &line)
     std::this_thread::sleep_for(timespan);
 };
 
-/*
-int main()
-{
-
-    //this empty loop is needed for keep the server thread alive until the drone connects.
-    while (true)
-    {
-
-    }
-    return 0;
-}
-*/

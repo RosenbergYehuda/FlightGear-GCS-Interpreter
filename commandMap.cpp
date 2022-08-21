@@ -15,12 +15,3 @@ CommandMap::CommandMap()
 
 unordered_map<string, unique_ptr <Command>> CommandMap::umap;
 
-
-/*
-int main()
-{
-    CommandMap instance;
-    cout<<instance.umap.at("openDataServer")<<endl;
-    return 0;
-}
-*/

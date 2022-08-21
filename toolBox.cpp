@@ -81,13 +81,3 @@ bool ToolBox::isFound(string element, class claasName)
     else{
         return true;
     }
-};
-*/
-/*
-int main()
-{
-    ToolBox tinstance;
-    cout<<tinstance.operatorInterp(5,"<", 3)<<endl;
-    return 0;
-};
-*/
