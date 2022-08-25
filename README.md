@@ -84,7 +84,7 @@ The Design and Architecture of the project are as follows:
 
 * Threading
 
-* Singeltone
+* Singelton
 
 * Polymorphism
 
